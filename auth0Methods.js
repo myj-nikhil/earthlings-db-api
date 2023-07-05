@@ -1,6 +1,7 @@
 // This file defines a function that updates an Auth0 user.
 
 const axios = require("axios").default;
+require('dotenv').config({ path: '.env' });
 const { AUTH0_CLIENT_ID, AUTH0_CLIENT_SECRET, AUTH0_TOKENURL, AUTH0_AUDIENCE } =
   process.env;
 
